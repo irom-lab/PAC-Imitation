@@ -31,4 +31,5 @@ Moreover, we provide the pre-trained weights for the decoder network of the cVAE
 ### Future release
 1. Provide the mesh-processing code for mugs from ShapeNet.
 2. Provide the collected demonstrations for both pushing and grasping examples.
-We do not plan to release instructions to replicate results of the indoor navigation example in the near future.
+
+(**Note:** we do not plan to release instructions to replicate results of the indoor navigation example in the near future. We plan to refine the simulation in a future version of the paper.)
