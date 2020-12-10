@@ -1,6 +1,8 @@
-# Generalization Guarantees for Multi-Modal Imitation Learning
+# Generalization Guarantees for (Multi-Modal) Imitation Learning
 
-[Paper (under review)](https://arxiv.org/abs/2008.01913) [Video](https://www.youtube.com/watch?v=dfXyHvOTolc&t=3s)
+[Paper](https://arxiv.org/abs/2008.01913) | [Review](https://drive.google.com/file/d/1VmLh07UuOVhDxGXh2YoVCJf3GvHNbG0M/view?usp=sharing) | [Experiment video](https://www.youtube.com/watch?v=dfXyHvOTolc&t=3s) | [5min presentation at CoRL 2020](https://www.youtube.com/watch?v=nabtvOWoIlo&feature=emb_logo)
+
+[![Watch the video](https://img.youtube.com/vi/dfXyHvOTolc/maxresdefault.jpg)](https://www.youtube.com/watch?v=dfXyHvOTolc)
 
 This repository includes codes for synthetic trainings of these robotic tasks in the paper:
 1. Grasping diverse mugs

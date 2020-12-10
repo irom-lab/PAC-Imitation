@@ -128,7 +128,7 @@ class TrainPush_BC:
 				])
 		if optim_dic['decayLR']['use']:
 			self.scheduler = torch.optim.lr_scheduler.MultiStepLR(
-				optimizer, 
+				self.optimizer, 
 				milestones=optim_dic['decayLR']['milestones'], 
 		  		gamma=optim_dic['decayLR']['gamma'])
 		else:
