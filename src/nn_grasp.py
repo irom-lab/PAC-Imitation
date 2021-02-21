@@ -73,7 +73,7 @@ class Encoder(nn.Module):
 		x = self.sm(x)
 
 		# MLP
-		x = self.linear_1(torch.cat((x, action), dim=1))
+		x = self.linear_1(torch.cat((x, mlp_append), dim=1))
 		x = self.linear_2(x)
 		out = self.linear_out(x)
 
