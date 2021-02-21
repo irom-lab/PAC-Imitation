@@ -35,3 +35,6 @@ Moreover, we provide the pre-trained weights for the decoder network of the cVAE
 2. Provide the collected demonstrations for both pushing and grasping examples.
 
 (**Note:** we do not plan to release instructions to replicate results of the indoor navigation example in the near future. We plan to refine the simulation in a future version of the paper.)
+
+### Omission of the paper
+1. We made the assumption that the latent variables in the CVAE are independent of the states (p(z|s_{1:T}) = p(z)).
