@@ -1,0 +1,60 @@
+{
+	"config":
+	{
+		"numEpochs": 300,
+		"N": 30,
+		"L": 1,
+		"B_split": 2,
+		"visdom": 1,
+		"trainFolderDir": "../data/training/push_0625/processed/",
+		"testFolderDir": "../data/training/push_0625/processed/",
+		"obj_folder": "/home/allen/data/processed_objects/Box_v4/",
+		"num_cpus": 10,
+		"numSeenTest": 100,
+		"numUnseenTest": 100,
+		"test_freq": 10,
+		"test_y_target_range": 0.15
+	},
+	"data":
+	{
+		"numTrainTrials": 480,
+		"numTestTrials": 30
+	},
+	"nn":
+	{
+		"z_conv_dim": 1,
+		"z_mlp_dim": 4,
+		"state_dim": 10,
+		"action_dim": 2,
+		"encoder_out_cnn_dim": 40,
+		"actor_out_cnn_dim": 40,
+		"lstm_hidden_dim": 40,
+		"include_extra_kl": 1
+	},
+	"loss":
+	{
+		"kl_anneal_wait": 0,
+		"kl_anneal_period": 3,
+		"trans_l2_ratio": 3.0,
+		"kl_loss_ratio": 5e-2,
+		"gradientClip":
+		{
+			"use": 1,
+			"thres": 5
+		}
+	},
+	"optim":
+	{
+		"type": "AdamW",
+		"actor_lr": 1e-3,
+		"actor_weight_decay": 1e-5,
+		"encoder_lr": 1e-3,
+		"encoder_weight_decay": 1e-5,
+		"decayLR":
+		{
+			"use": 0,
+			"milestones": [100, 200, 300, 400],
+			"gamma": 0.5
+		}
+	}    
+}
